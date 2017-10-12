@@ -1,0 +1,147 @@
+{
+  "docs": {
+    "name": "Example",
+    "info": "\n<p>Another API description</p>\n",
+    "copyright": null,
+    "doc_url": "../../api",
+    "api_url": null,
+    "resources": {
+      "Pull Requests": {
+        "doc_url": "../../api/Pull Requests",
+        "api_url": "",
+        "name": "Pull Requests",
+        "short_description": "Manage pull requests",
+        "full_description": "",
+        "version": "1.0",
+        "formats": null,
+        "metadata": null,
+        "methods": [
+          {
+            "doc_url": "../../api/Pull Requests/index",
+            "name": "index",
+            "apis": [
+              {
+                "api_url": "/api/pulls/:pull_id/merges",
+                "http_method": "GET",
+                "short_description": "List merges for a PR",
+                "deprecated": null
+              }
+            ],
+            "formats": null,
+            "full_description": "",
+            "errors": [
+
+            ],
+            "params": [
+              {
+                "name": "pull_id",
+                "full_name": "pull_id",
+                "description": "",
+                "required": true,
+                "allow_nil": false,
+                "allow_blank": false,
+                "validator": "Must be a Integer",
+                "expected_type": "numeric",
+                "metadata": null,
+                "show": true,
+                "validations": [
+
+                ]
+              }
+            ],
+            "examples": [
+              "GET /api/pulls/5/merges.json\n204"
+            ],
+            "metadata": null,
+            "see": [
+
+            ],
+            "headers": [
+
+            ],
+            "show": true
+          },
+          {
+            "doc_url": "../../api/Pull Requests/create",
+            "name": "create",
+            "apis": [
+              {
+                "api_url": "/api/pulls",
+                "http_method": "POST",
+                "short_description": "Create a new pull request",
+                "deprecated": null
+              }
+            ],
+            "formats": null,
+            "full_description": "",
+            "errors": [
+
+            ],
+            "params": [
+
+            ],
+            "examples": [
+              "POST /api/pulls/5/merges.json\n{}\n200"
+            ],
+            "metadata": null,
+            "see": [
+
+            ],
+            "headers": [
+
+            ],
+            "show": true
+          },
+          {
+            "doc_url": "../../api/Pull Requests/destroy",
+            "name": "destroy",
+            "apis": [
+              {
+                "api_url": "/api/pulls/:id",
+                "http_method": "DELETE",
+                "short_description": "Deletes a pull request",
+                "deprecated": null
+              }
+            ],
+            "formats": null,
+            "full_description": "",
+            "errors": [
+
+            ],
+            "params": [
+              {
+                "name": "id",
+                "full_name": "id",
+                "description": "\n<p>Which PR to nuke</p>\n",
+                "required": true,
+                "allow_nil": false,
+                "allow_blank": false,
+                "validator": "Must be a Integer",
+                "expected_type": "numeric",
+                "metadata": null,
+                "show": true,
+                "validations": [
+
+                ]
+              }
+            ],
+            "examples": [
+
+            ],
+            "metadata": null,
+            "see": [
+
+            ],
+            "headers": [
+
+            ],
+            "show": true
+          }
+        ],
+        "headers": [
+
+        ]
+      }
+    }
+  }
+}

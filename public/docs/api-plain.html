@@ -1,0 +1,120 @@
+  <h4><a href='#Pull Requests'>Pull Requests</a></h4>
+  <ul>
+      <li><a href='#Pull Requests-index'>index</a></li>
+      <li><a href='#Pull Requests-create'>create</a></li>
+      <li><a href='#Pull Requests-destroy'>destroy</a></li>
+  </ul>
+
+
+
+  <hr/>
+
+  <div>
+    <h2 id="Pull Requests">
+      <a href='#Pull Requests'>Pull Requests</a><br>
+      <small>Manage pull requests</small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="Pull Requests-index">
+      <a href='#Pull Requests'>Pull Requests</a> / <a href='#Pull Requests-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/pulls/:pull_id/merges
+            <br>
+            <small>List merges for a PR</small>
+          </h4>
+      </div>
+
+      <div>
+        
+          <h4>Examples</h4>
+            <pre class="wiki">GET /api/pulls/5/merges.json
+204</pre>
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>pull_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a Integer</p>
+ ]
+      </small>
+      
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="Pull Requests-create">
+      <a href='#Pull Requests'>Pull Requests</a> / <a href='#Pull Requests-create'>create</a>
+      </h3>
+
+      <div>
+          <h4>
+              POST /api/pulls
+            <br>
+            <small>Create a new pull request</small>
+          </h4>
+      </div>
+
+      <div>
+        
+          <h4>Examples</h4>
+            <pre class="wiki">POST /api/pulls/5/merges.json
+{}
+200</pre>
+
+
+      </div>
+      <hr/>
+
+      <h3 id="Pull Requests-destroy">
+      <a href='#Pull Requests'>Pull Requests</a> / <a href='#Pull Requests-destroy'>destroy</a>
+      </h3>
+
+      <div>
+          <h4>
+              DELETE /api/pulls/:id
+            <br>
+            <small>Deletes a pull request</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a Integer</p>
+ ]
+      </small>
+      
+<p>Which PR to nuke</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+  </div>

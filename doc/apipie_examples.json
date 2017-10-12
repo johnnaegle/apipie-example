@@ -1,0 +1,63 @@
+{
+  "Pull Requests#create": [
+    {
+      "verb": "POST",
+      "path": "/api/pulls/5/merges.json",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": {
+      },
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/api/pulls.json",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+      },
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "Pull Requests#destroy": [
+    {
+      "verb": "DELETE",
+      "path": "/api/pulls/5.json",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+      },
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "Pull Requests#index": [
+    {
+      "verb": "GET",
+      "path": "/api/pulls/5/merges.json",
+      "versions": [
+        "1.0"
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": null,
+      "code": "204",
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ]
+}
